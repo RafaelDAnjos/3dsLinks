@@ -1,0 +1,135 @@
+
+#page-landing{
+
+    background-color: gainsboro;
+}
+
+#page-landing #container .top-bar-container{
+    background: black;
+    text-align: center;
+    width: 100vw;
+    margin-top:0;
+    color: silver;
+    padding-top:1.6rem;
+    padding-bottom: 1.6rem;
+
+}
+#page-landing #container .top-bar-container h1{
+    font-size: 4.6rem;
+    margin-top: -1rem;
+    font-weight: bold;
+    line-height: 4.6rem;
+    padding-bottom: 2rem;
+ 
+}
+#page-landing #container .top-bar-container p{
+    font-size: 1.8rem ;
+    margin-bottom: 2.4rem;
+}
+#page-landing #container .select-block{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.select-block select{
+    border:0;
+    border-radius: .8rem;
+    width: 50%;
+    height: 3.2rem;
+    margin: 1.6rem;
+    max-width: 500px;
+}
+.select-block button{
+    border: 0;
+    background: none;
+    background-color: purple;
+    transition: background-color 2s;
+    color: ghostwhite;
+    border-radius: .8rem;
+    width: 50%;
+    height: 3.2rem;
+    margin: 1.6rem;
+    cursor: pointer;
+    max-width: 500px;
+}
+.select-block button:hover{
+    background-color: indigo;
+}
+main{
+    background: var(--color-box-base);
+    width: 100vw;
+
+    max-width: 700px;
+    margin: 3.2rem auto 3.2rem;
+    border-radius: .8rem;
+    padding-top: 6.4rem;
+}
+
+.game-item {
+    
+    padding-bottom: 5% auto;
+    margin:20px;
+    background-color: var(--color-box-base);
+    border-radius: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--color-line-in-white);
+}
+.game-item img{
+    width: 25vw;
+    padding-bottom: 1.3rem;
+
+}
+.game-item h2{
+    font-size: 3rem;
+    padding-bottom: 1.3rem;
+
+}
+.game-item div p{
+    font-size: 1.4rem;
+    padding-bottom: 1.3rem;
+
+}
+.game-item a button{
+    text-decoration: none;
+    width: 200px;
+    height: 50px;
+
+    border: 2.4rem;
+    background:0;
+    background-color: purple;
+
+    color: ghostwhite;
+    transition: background-color 2s;
+    border-radius: 0.8rem;
+    cursor: pointer;    
+
+    margin-bottom: 2.4rem;
+}
+main article a button:hover{
+    background-color: indigo;
+}
+@media(min-width:700px){
+     
+    #page-landing #container .select-block{
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .select-block select{
+
+        width: 500px;
+
+    }
+    .select-block button{
+
+        width: 500px;
+
+    }
+
+
+}
