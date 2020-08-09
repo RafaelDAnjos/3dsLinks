@@ -1,0 +1,55 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/styles/page-landing.css">
+
+    <title>Seu site de cias</title>
+</head>
+<body id = page-landing>
+    <div id="container">
+        <div class="top-bar-container">
+           <h1>3dsciaLinks</h1>
+           <p>Seu site de cias</p>
+        </div>
+        <form id="filtra-console"> 
+            <div class="select-block">
+                
+                <select name="console" id="console">
+                    <option value="">Escolha seu console</option>
+                    {% for console in consoles%}
+                    <option value="{{loop.index0}}" {{"selected" if filters.console == loop.index0 }}>{{console}}<option>
+                    {%endfor%}
+                </select>
+                <button type=submit id = "Filtrar">Filtrar</button>
+            </div>
+        </form>
+    </div>
+    <main>
+
+        {% for jogo in jogos %}
+        <article class= "game-item">
+            <head>
+                <h2>{{jogo.nome}}</h2>
+            </head>
+            <div>
+                
+                <img src="{{jogo.imagem}}" alt="Imagem-jogo">
+                <p>Plataforma:{{jogo.plataforma}}</p>
+                <p>{{jogo.descricao}}</p>
+            </div>
+            
+            
+            <a type= button href="{{jogo.link_download}}">
+                <button>Clique aqui para baixar</button>
+                </a>
+        </article>
+        {%endfor%}
+
+
+    </main>
+    
+    
+</body>
+</html>
