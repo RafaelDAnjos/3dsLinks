@@ -41,6 +41,11 @@
     margin: 1.6rem;
     max-width: 500px;
 }
+.select-block option{
+    display: flex;
+    flex-direction: column;
+
+}
 .select-block button{
     border: 0;
     background: none;
@@ -81,6 +86,7 @@ main{
 .game-item img{
     width: 25vw;
     padding-bottom: 1.3rem;
+    justify-self: center;
 
 }
 .game-item h2{

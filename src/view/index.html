@@ -13,14 +13,15 @@
            <h1>3dsciaLinks</h1>
            <p>Seu site de cias</p>
         </div>
-        <form id="filtra-console"> 
+        <form method = "GET" id="filtra-console"> 
             <div class="select-block">
                 
                 <select name="console" id="console">
                     <option value="">Escolha seu console</option>
-                    {% for console in consoles%}
-                    <option value="{{loop.index0}}" {{"selected" if filters.console == loop.index0 }}>{{console}}<option>
+                    {%for console in consoles %}
+                        <option value="{{loop.index0}}" {{"selected" if filters.console == loop.index0 }} >{{console}}</option>
                     {%endfor%}
+                    
                 </select>
                 <button type=submit id = "Filtrar">Filtrar</button>
             </div>
@@ -30,9 +31,9 @@
 
         {% for jogo in jogos %}
         <article class= "game-item">
-            <head>
+         
                 <h2>{{jogo.nome}}</h2>
-            </head>
+            
             <div>
                 
                 <img src="{{jogo.imagem}}" alt="Imagem-jogo">
@@ -41,7 +42,7 @@
             </div>
             
             
-            <a type= button href="{{jogo.link_download}}">
+            <a type= button href="{{jogo.link}}">
                 <button>Clique aqui para baixar</button>
                 </a>
         </article>
