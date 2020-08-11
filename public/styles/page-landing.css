@@ -17,21 +17,25 @@
     align-items: center;
     
 }
+#page-landing #container .top-bar-container .top-img img{
+    width:15vw;
+
+}
 #page-landing #container .top-bar-container .top-title{
     color: var(--color-text-in-primary);
-    text-align: left;
+    text-align: center;
     margin-right: 3rem;
+    justify-self: start;
 }
 #page-landing #container .top-bar-container h1{
-    font-size: 4.6rem;
-    margin-top: -1rem;
+    font-size: 3rem;
     font-weight: bold;
     line-height: 4.6rem;
     padding-bottom: 2rem;
  
 }
 #page-landing #container .top-bar-container p{
-    font-size: 1.8rem ;
+    font-size: 1.5rem ;
     margin-bottom: 2.4rem;
 }
 #page-landing #container .select-block{
@@ -132,8 +136,17 @@ main article a button:hover{
 @media(min-width:700px){
      
     #page-landing #container .top-bar-container .top-img{
-        margin-right: -12rem;
+        width: auto;
 
+    }
+    #page-landing #container .top-bar-container h1{
+        font-size: 4.6rem;
+        
+     
+    }
+    #page-landing #container .top-bar-container p{
+        font-size: 2.2rem ;
+        
     }
     #page-landing #container .select-block{
 
