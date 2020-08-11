@@ -17,4 +17,4 @@ nunjucks.configure('src/view',{
 
 server.use(express.static("public"))
 .get('/',pageLanding)
-.listen(5500)
+.listen( process.env.PORT || 5500)
