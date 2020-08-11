@@ -34,11 +34,29 @@ const consoles = ["GBA","NDS","3DS"]
 
 
 
+function isEmpty(obj) {
+    for(var prop in obj) {
+        if(obj.hasOwnProperty(prop))
+            return false;
+    }
+
+    return true;
+}
+
 function pageLanding(req,res){
     const filters = req.query
     const jogos = []
-    console.log()
+    console.log(filters)
+    if(isEmpty(filters) | filters.console==''){
+        jogosa.forEach(jogo => {
 
+
+                jogos.push(jogo)
+            
+        
+         });
+         return res.render("index.html",{jogos,consoles,filters})
+    }
      jogosa.forEach(jogo => {
 
         if(Object.is(jogo.plataforma,consoles[filters.console])){

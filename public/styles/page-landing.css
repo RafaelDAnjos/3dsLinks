@@ -5,14 +5,22 @@
 }
 
 #page-landing #container .top-bar-container{
-    background: black;
-    text-align: center;
+    background: rebeccapurple;
+    
     width: 100vw;
     margin-top:0;
-    color: silver;
     padding-top:1.6rem;
     padding-bottom: 1.6rem;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    align-items: center;
+    
+}
+#page-landing #container .top-bar-container .top-title{
+    color: var(--color-text-in-primary);
+    text-align: left;
+    margin-right: 3rem;
 }
 #page-landing #container .top-bar-container h1{
     font-size: 4.6rem;
@@ -31,6 +39,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 2rem;
 
 }
 .select-block select{
@@ -75,12 +84,14 @@ main{
 .game-item {
     
     padding-bottom: 5% auto;
+    text-align: center;
     margin:20px;
     background-color: var(--color-box-base);
     border-radius: 0.8;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     border: 1px solid var(--color-line-in-white);
 }
 .game-item img{
@@ -120,6 +131,10 @@ main article a button:hover{
 }
 @media(min-width:700px){
      
+    #page-landing #container .top-bar-container .top-img{
+        margin-right: -12rem;
+
+    }
     #page-landing #container .select-block{
 
         display: flex;
